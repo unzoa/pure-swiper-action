@@ -1,0 +1,56 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-image: linear-gradient(to bottom, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+
+.con {
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+
+  white-space: nowrap;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  width: calc(20% - 10px);
+  height: 50px;
+
+  box-sizing: border-box;
+  border: 2px solid lime;
+
+  margin-right: 10px;
+}
+
+.active {
+  animation-name: activeNode;
+  animation-timing-function: ease;
+}
+
+@keyframes activeNode {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+    border: 2px dashed red;
+  }
+
+  30% {
+    transform: scale(0.5);
+    opacity: 0.6;
+    border: 2px dashed red;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    border: 2px solid lime;
+  }
+}
