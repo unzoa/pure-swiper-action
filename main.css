@@ -30,6 +30,11 @@ li {
   margin-right: 10px;
 }
 
+li:last-child {
+  width: 20%;
+  margin-right: 0px;
+}
+
 .active {
   animation-name: activeNode;
   animation-timing-function: ease;
