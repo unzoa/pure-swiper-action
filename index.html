@@ -8,19 +8,26 @@
   </head>
 
   <body>
-    <div class="con">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <div class="outter">
+      <div class="con">
+        <ul>
+          <li class="slide-item vertical"></li>
+          <li class="slide-item vertical"></li>
+          <li class="slide-item vertical"></li>
+          <li class="slide-item vertical"></li>
+          <li class="slide-item vertical"></li>
+        </ul>
+      </div>
     </div>
+
+    <select placeholder="选择移动方向" onChange="directChange(this.value)">
+      <option value="vertical">纵向</option>
+      <option value="horizontal">横向</option>
+    </select>
 
     <button onclick="add()">add</button>
     |
-    <button onclick="action()">action</button>
+    <button onclick="action()">AutoPlay</button>
 
     <script src="./main.js"></script>
   </body>
